@@ -6,8 +6,8 @@ import PyPDF2
 import singlestoredb as s2
 import string
 
-conn = s2.connect(host='svc-0c779247-ddcf-4590-a7d3-1698f8f4dcbf-dml.aws-virginia-6.svc.singlestore.com', port='3306', user='admin',
-                  password='bhxgmqA72eyxwio1keUbf99qwm2qwSj6', database='vectordb')
+conn = s2.connect(host='HOST_HERE', port='3306', user='USERNAME_HERE',
+                  password='PASSWORD_HERE', database='vectordb')
 
 client = OpenAI(
   api_key = os.environ.get("OPENAI_API_KEY")
